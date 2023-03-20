@@ -1,0 +1,26 @@
+.App {
+  height: 100vh;
+  background: linear-gradient(120deg, #008bcf, #FFFFFF);
+}
+
+.scroll {
+  overflow-y: auto;
+}
+
+.error_modal .modal-header {
+  font-size: 24px;
+  background-color: #d64249;
+  color: #FFFFFF;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 40px
+}
+
+.error_modal_close {
+  color: #FFFFFF !important;
+  background: transparent;
+  border: none;
+  position: relative;
+  left: 42%;
+}

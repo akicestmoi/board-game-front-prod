@@ -1,0 +1,65 @@
+.board {
+    position: relative;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+.square {
+    background: #fff;
+    border: 2px solid #060606;
+    float: left;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 150px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 150px;
+}
+
+.board_row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.game_status {
+    position: relative;
+    max-height: 300px;
+}
+
+.game_log {
+    position: relative;
+    max-height: 500px;
+}
+
+.card {
+    color: #04496b;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tictactoe_list_item {
+    color: #04496b !important;
+}
+
+.status_list_title {
+    font-weight: bold;
+}
+
+.back_button {
+    position: relative;
+    margin-top: 10px;
+    left: 300px;
+    width: 300px;
+    background-color: #04496b !important;
+    border-color: #04496b !important;
+}
