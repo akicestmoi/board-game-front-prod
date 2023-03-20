@@ -25,7 +25,7 @@ export default function Lobby() {
     const [ error, setError ] = useState<string>("")
     const [ showError, setShowError ] = useState<boolean>(false)
 
-    const url = "http://localhost:8000/tictactoe/lobby/" + state.username
+    const url = "https://board-game-back-prod-production.up.railway.app/tictactoe/lobby/" + state.username
 
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>, username: string | null) => {

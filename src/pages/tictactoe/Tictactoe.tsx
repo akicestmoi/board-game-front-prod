@@ -64,7 +64,7 @@ export default function Tictactoe() {
     const { state } = useAuthContext()
     const { id } = useParams()
     const ws = useRef<WebSocket | null>(null)
-    const ws_url: string = "ws://127.0.0.1:8000/ws/tictactoe/" + id
+    const ws_url: string = "ws://board-game-back-prod-production.up.railway.app/ws/tictactoe/" + id
     const navigate = useNavigate()
 
 

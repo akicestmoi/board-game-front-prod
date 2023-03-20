@@ -26,7 +26,7 @@ export default function Login() {
 
     const { dispatch } = useAuthContext()
 
-    const url = 'http://localhost:8000/user/login'
+    const url = 'https://board-game-back-prod-production.up.railway.app/user/login'
 
     const navigate = useNavigate()
 

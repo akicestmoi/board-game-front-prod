@@ -29,7 +29,7 @@ export default function Signup() {
 
     const { dispatch } = useAuthContext()
 
-    const url = 'http://localhost:8000/user/signup'
+    const url = 'https://board-game-back-prod-production.up.railway.app/user/signup'
 
     const navigate = useNavigate()
 

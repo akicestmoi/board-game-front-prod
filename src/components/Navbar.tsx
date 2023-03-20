@@ -15,7 +15,7 @@ export default function NavigationBar() {
 
     /* Declaring State Object and Constant variables */
     const { state, dispatch } = useAuthContext()
-    const url = "http://localhost:8000/user/logout"
+    const url = "https://board-game-back-prod-production.up.railway.app/user/logout"
     const navigate = useNavigate()
 
 
