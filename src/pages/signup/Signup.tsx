@@ -29,7 +29,7 @@ export default function Signup() {
 
     const { dispatch } = useAuthContext()
 
-    const url = 'https://board-game-back-prod-production.up.railway.app/user/signup'
+    const url = process.env.REACT_APP_BACKEND_URL + "/user/signup"
 
     const navigate = useNavigate()
 

@@ -25,8 +25,8 @@ export default function Login() {
     const [ showError, setShowError ] = useState<boolean>(false)
 
     const { dispatch } = useAuthContext()
-
-    const url = 'https://board-game-back-prod-production.up.railway.app/user/login'
+    
+    const url = process.env.REACT_APP_BACKEND_URL + "/user/login"
 
     const navigate = useNavigate()
 

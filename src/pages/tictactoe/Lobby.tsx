@@ -25,7 +25,7 @@ export default function Lobby() {
     const [ error, setError ] = useState<string>("")
     const [ showError, setShowError ] = useState<boolean>(false)
 
-    const url = "https://board-game-back-prod-production.up.railway.app/tictactoe/lobby/" + state.username
+    const url = process.env.REACT_APP_BACKEND_URL + "/tictactoe/lobby/" + state.username
 
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>, username: string | null) => {
