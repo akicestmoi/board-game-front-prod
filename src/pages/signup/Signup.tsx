@@ -74,8 +74,6 @@ export default function Signup() {
     }
 
 
-    const errorMessage: string | null = emailError + "hello"
-
     /* Render */
     return (
         <Container fluid className="signup_page">

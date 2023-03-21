@@ -1,5 +1,5 @@
 /* Base */
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { doLogout } from '../contexts/AuthContext'
 import { useAuthContext } from '../hooks/useAuthContext'
 import { Nav, Navbar, Button } from 'react-bootstrap'
@@ -15,7 +15,7 @@ export default function NavigationBar() {
 
     /* Declaring State Object and Constant variables */
     const { state, dispatch } = useAuthContext()
-    const url = "https://board-game-back-prod-production.up.railway.app/user/logout"
+    const url = process.env.REACT_APP_BACKEND_URL + "/user/logout"
     const navigate = useNavigate()
 
 
