@@ -1,5 +1,5 @@
 /* Base */
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 /* Context */
@@ -140,7 +140,7 @@ export default function Tictactoe() {
 
         }
 
-    }, [isInitialized, squareMatrix, backendMessage, changeSquareValue, initializeBoard])
+    }, [isInitialized, squareMatrix, backendMessage])
 
     
     
@@ -158,10 +158,10 @@ export default function Tictactoe() {
 
 
     return(
-        <Container fluid>
+        <Container fluid className="tictactoe_game">
             <Row>
-                <Col>
-                    <div className='board'>
+                <Col className="board_col">
+                    <div className="board">
                         { !isInitialized && <h1>Loading...</h1> }
                         { isInitialized && [ ...Array(boardSize.current) ].map((e, i) => 
                             <div className='board_row' key={i}>
@@ -177,6 +177,7 @@ export default function Tictactoe() {
                             </div>
                         )}                        
                     </div>
+
                 </Col>
                 <Col>
                     <Card className='game_status'>

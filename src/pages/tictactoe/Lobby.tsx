@@ -1,6 +1,6 @@
 /* Base */
 import React, { useState, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 /* Hooks */
 import { useAuthContext } from '../../hooks/useAuthContext'
@@ -100,7 +100,7 @@ export default function Lobby() {
             })
             .catch((error) => {
                 console.log(error)
-            }) 
+            })  
     }, [url])
 
 
@@ -129,7 +129,7 @@ export default function Lobby() {
                         </Card.Body>
                     </Card>   
                 </Col>
-                <Col>
+                <Col className="game_access_column">
                     <Card className="lobby_card">
                         <Card.Header>Available Games</Card.Header>
                         <Card.Body className="scroll">
